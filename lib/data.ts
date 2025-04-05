@@ -1,0 +1,278 @@
+import type { Item } from "./types"
+
+export const items: Item[] = [
+  {
+    id: "1",
+    title: "데이터베이스 개론 교재",
+    price: 15000,
+    description: "한 학기 사용했습니다. 필기나 밑줄 없이 깨끗합니다. 데이터베이스 입문 수업에 필요한 교재입니다.",
+    image: "/placeholder.svg?height=300&width=300&text=데이터베이스+교재",
+    category: "교재/책",
+    condition: "거의 새 상품",
+    location: "도서관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 30).toISOString(), // 30분 전
+    seller: {
+      id: "user1",
+      name: "김학생",
+      department: "컴퓨터공학과",
+    },
+  },
+  {
+    id: "2",
+    title: "아이패드 프로 11인치 (2021)",
+    price: 650000,
+    description:
+      "1년 사용했습니다. 상태 좋고 충전기, 케이스 포함입니다. 필기용으로 사용했고 화면에 보호필름 부착되어 있습니다.",
+    image: "/placeholder.svg?height=300&width=300&text=아이패드+프로",
+    category: "전자기기",
+    condition: "상태 좋음",
+    location: "학생회관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 3).toISOString(), // 3시간 전
+    seller: {
+      id: "user2",
+      name: "이대학",
+      department: "경영학과",
+    },
+  },
+  {
+    id: "3",
+    title: "책상 의자",
+    price: 30000,
+    description: "기숙사 퇴사로 인해 판매합니다. 1년 사용했고 상태 좋습니다. 높이 조절 가능하고 바퀴 있는 의자입니다.",
+    image: "/placeholder.svg?height=300&width=300&text=책상+의자",
+    category: "가구/인테리어",
+    condition: "사용감 있음",
+    location: "기숙사",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 2).toISOString(), // 2일 전
+    seller: {
+      id: "user3",
+      name: "박기숙",
+      department: "건축학과",
+    },
+  },
+  {
+    id: "4",
+    title: "통계학 개론 교재",
+    price: 12000,
+    description: "통계학 입문 수업에서 사용하는 교재입니다. 중요한 부분에 형광펜으로 표시해 두었습니다.",
+    image: "/placeholder.svg?height=300&width=300&text=통계학+교재",
+    category: "교재/책",
+    condition: "상태 좋음",
+    location: "도서관",
+    status: "sold",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 7).toISOString(), // 1주일 전
+    seller: {
+      id: "user4",
+      name: "최통계",
+      department: "통계학과",
+    },
+  },
+  {
+    id: "5",
+    title: "자전거 (삼천리 하이브리드)",
+    price: 80000,
+    description: "2년 사용했습니다. 기어, 브레이크 모두 정상 작동합니다. 자물쇠 포함이고 타이어 상태 좋습니다.",
+    image: "/placeholder.svg?height=300&width=300&text=자전거",
+    category: "기타",
+    condition: "사용감 있음",
+    location: "정문",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 14).toISOString(), // 2주일 전
+    seller: {
+      id: "user5",
+      name: "정자전",
+      department: "체육교육과",
+    },
+  },
+  {
+    id: "6",
+    title: "프로그래밍 언어론 교재",
+    price: 18000,
+    description: "프로그래밍 언어론 수업에서 사용하는 교재입니다. 깨끗하게 사용했습니다.",
+    image: "/placeholder.svg?height=300&width=300&text=프로그래밍+교재",
+    category: "교재/책",
+    condition: "거의 새 상품",
+    location: "공학관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 30).toISOString(), // 1개월 전
+    seller: {
+      id: "user6",
+      name: "한코딩",
+      department: "소프트웨어학과",
+    },
+  },
+  {
+    id: "7",
+    title: "블루투스 스피커 (JBL)",
+    price: 45000,
+    description: "JBL Flip5 모델입니다. 배터리 지속시간 좋고 음질 좋습니다. 충전 케이블 포함입니다.",
+    image: "/placeholder.svg?height=300&width=300&text=블루투스+스피커",
+    category: "전자기기",
+    condition: "상태 좋음",
+    location: "학생회관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 60).toISOString(), // 2개월 전
+    seller: {
+      id: "user7",
+      name: "송음악",
+      department: "음악학과",
+    },
+  },
+  {
+    id: "8",
+    title: "책장",
+    price: 25000,
+    description: "이케아 빌리 책장입니다. 조립해서 사용 중이고 상태 좋습니다. 직접 가져가셔야 합니다.",
+    image: "/placeholder.svg?height=300&width=300&text=책장",
+    category: "가구/인테리어",
+    condition: "상태 좋음",
+    location: "기숙사",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 90).toISOString(), // 3개월 전
+    seller: {
+      id: "user8",
+      name: "강가구",
+      department: "디자인학과",
+    },
+  },
+  {
+    id: "9",
+    title: "영어회화 교재 세트",
+    price: 22000,
+    description: "영어회화 수업에서 사용하는 교재와 워크북 세트입니다. 워크북은 사용하지 않았습니다.",
+    image: "/placeholder.svg?height=300&width=300&text=영어회화+교재",
+    category: "교재/책",
+    condition: "거의 새 상품",
+    location: "도서관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 5).toISOString(), // 5시간 전
+    seller: {
+      id: "user9",
+      name: "이영어",
+      department: "영어영문학과",
+    },
+  },
+  {
+    id: "10",
+    title: "노트북 가방",
+    price: 15000,
+    description: "15인치 노트북까지 수납 가능한 가방입니다. 사용감 거의 없고 깨끗합니다.",
+    image: "/placeholder.svg?height=300&width=300&text=노트북+가방",
+    category: "기타",
+    condition: "상태 좋음",
+    location: "학생회관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 4).toISOString(), // 4일 전
+    seller: {
+      id: "user10",
+      name: "박가방",
+      department: "경영학과",
+    },
+  },
+  {
+    id: "11",
+    title: "기타 (어쿠스틱)",
+    price: 120000,
+    description: "야마하 F310 모델입니다. 초보자용으로 좋고 상태 양호합니다. 기타 케이스 포함입니다.",
+    image: "/placeholder.svg?height=300&width=300&text=어쿠스틱+기타",
+    category: "기타",
+    condition: "상태 좋음",
+    location: "음악관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 10).toISOString(), // 10일 전
+    seller: {
+      id: "user11",
+      name: "김기타",
+      department: "음악학과",
+    },
+  },
+  {
+    id: "12",
+    title: "미적분학 교재",
+    price: 10000,
+    description: "미적분학 기초 교재입니다. 연습문제 풀이 포함되어 있습니다.",
+    image: "/placeholder.svg?height=300&width=300&text=미적분학+교재",
+    category: "교재/책",
+    condition: "사용감 있음",
+    location: "도서관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 21).toISOString(), // 3주일 전
+    seller: {
+      id: "user12",
+      name: "최수학",
+      department: "수학과",
+    },
+  },
+  {
+    id: "13",
+    title: "헬스장 회원권 양도 (3개월)",
+    price: 80000,
+    description: "학교 앞 피트니스 클럽 3개월 회원권입니다. 개인 사정으로 더 이상 이용이 어려워 양도합니다.",
+    image: "/placeholder.svg?height=300&width=300&text=헬스장+회원권",
+    category: "기타",
+    condition: "새 상품",
+    location: "학생회관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 120).toISOString(), // 2시간 전
+    seller: {
+      id: "user13",
+      name: "강건강",
+      department: "체육교육과",
+    },
+  },
+  {
+    id: "14",
+    title: "전공서적 세트 (경영학)",
+    price: 45000,
+    description: "경영학 전공 필수 서적 5권 세트입니다. 모두 상태 좋고 형광펜 사용 최소화했습니다.",
+    image: "/placeholder.svg?height=300&width=300&text=경영학+전공서적",
+    category: "교재/책",
+    condition: "상태 좋음",
+    location: "경영관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 45).toISOString(), // 1.5개월 전
+    seller: {
+      id: "user14",
+      name: "정경영",
+      department: "경영학과",
+    },
+  },
+  {
+    id: "15",
+    title: "태블릿 거치대",
+    price: 8000,
+    description: "각도 조절 가능한 태블릿/아이패드 거치대입니다. 접이식이라 휴대하기 편리합니다.",
+    image: "/placeholder.svg?height=300&width=300&text=태블릿+거치대",
+    category: "전자기기",
+    condition: "거의 새 상품",
+    location: "공학관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 15).toISOString(), // 15분 전
+    seller: {
+      id: "user15",
+      name: "이태블",
+      department: "컴퓨터공학과",
+    },
+  },
+  {
+    id: "16",
+    title: "디자인 교재 모음",
+    price: 35000,
+    description: "그래픽 디자인 관련 교재 3권입니다. 포토샵, 일러스트레이터, 인디자인 기초 교재입니다.",
+    image: "/placeholder.svg?height=300&width=300&text=디자인+교재",
+    category: "교재/책",
+    condition: "상태 좋음",
+    location: "디자인관",
+    status: "available",
+    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24 * 75).toISOString(), // 2.5개월 전
+    seller: {
+      id: "user16",
+      name: "박디자인",
+      department: "디자인학과",
+    },
+  },
+]
+
